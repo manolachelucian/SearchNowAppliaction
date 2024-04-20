@@ -1,5 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using SearchNow.src.model.user_class;
+using SearchNow.src.objects.user;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +37,7 @@ namespace SearchNow.src.model.user_forums_functions
                     string query = "SELECT forum_name, forum_description, created_at FROM forums WHERE creator_user_id = @userId";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@userId", user.GetUserId());
+                        command.Parameters.AddWithValue("@userId", user.Id);
 
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {

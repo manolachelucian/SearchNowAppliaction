@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <Folder Include="doc\" />
-    <Folder Include="tests\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-namespace OmegaProject
+using OmegaProject;
+
+namespace SearchNow
 {
     internal static class Program
     {
