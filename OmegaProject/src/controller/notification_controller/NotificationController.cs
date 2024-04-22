@@ -25,9 +25,9 @@ namespace SearchNow.src.controller.notification_controller
         /// </summary>
         /// <param name="userId">The ID of the user receiving the notification.</param>
         /// <param name="message">The message content of the notification.</param>
-        public void SendNotification(int userId, string message)
+        public void SendNotification(int userId,int otherId,string message)
         {
-            notificationModel.SendNotification(userId, message);
+            notificationModel.SendNotification(userId, otherId, message);
         }
 
         /// <summary>

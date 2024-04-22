@@ -3,7 +3,7 @@
 /// <summary>
 /// Class responsible for managing database connections.
 /// </summary>
-public class DatabaseConnection
+public class DatabaseConnection 
 {
     private static string connectionString = null;
 

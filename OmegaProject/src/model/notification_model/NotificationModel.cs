@@ -14,18 +14,20 @@ namespace SearchNow.src.model.notification_model
         /// </summary>
         /// <param name="userId">The ID of the user receiving the notification.</param>
         /// <param name="message">The message content of the notification.</param>
-        public void SendNotification(int userId, string message)
+        /// <param name="otherId">The message content of the user</param>
+        public void SendNotification(int userId, int otherId, string message)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(DatabaseConnection.GetConnection()))
                 {
                    
-                    string query = "INSERT INTO Notifications (user_id, message_text) VALUES (@userId, @message)";
+                    string query = "INSERT INTO Notifications (user_id, other_user_id, message) VALUES (@userId, @other_user_id,@message)";
                     using(MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         connection.Open();
                         command.Parameters.AddWithValue("@userId", userId);
+                        command.Parameters.AddWithValue("@other_user_id", otherId);
                         command.Parameters.AddWithValue("@message", message);
                         int rowsAffected = command.ExecuteNonQuery();
 
@@ -63,11 +65,11 @@ namespace SearchNow.src.model.notification_model
                 using (MySqlConnection connection = new MySqlConnection(DatabaseConnection.GetConnection()))
                 {
                     connection.Open();
-                    string query = "SELECT n.notificaiton_id, n.user_id, n.message_text, n.Timestamp, n.isRead, u.username " +
-                                   "FROM Notifications AS n " +
-                                   "JOIN users AS u ON n.user_id = u.id_user " +
-                                   "WHERE n.user_id = @UserId " +
-                                   $"ORDER BY n.Timestamp {sortOrder};";
+                    string query = "SELECT n.notificaiton_id, n.user_id, n.message, n.Timestamp, n.isRead, u.username " +
+                  "FROM Notifications AS n " +
+                  "JOIN users AS u ON n.other_user_id = u.id_user " + 
+                  "WHERE n.user_id = @UserId " +
+                  $"ORDER BY n.Timestamp {sortOrder};";
 
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@UserId", userId);
@@ -79,7 +81,7 @@ namespace SearchNow.src.model.notification_model
                             Notification notification = new Notification();
                             notification.NotificationId = Convert.ToInt32(reader["notificaiton_id"]);
                             notification.UserId = Convert.ToInt32(reader["user_id"]);
-                            notification.Message = Convert.ToString(reader["message_text"]);
+                            notification.Message = Convert.ToString(reader["message"]);
                             notification.Timestamp = Convert.ToDateTime(reader["Timestamp"]);
                             notification.IsRead = Convert.ToBoolean(reader["isRead"]);
                             notification.Username = Convert.ToString(reader["username"]);

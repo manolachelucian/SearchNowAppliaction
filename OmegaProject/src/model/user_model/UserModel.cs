@@ -8,7 +8,7 @@ namespace SearchNow.src.model.user_model
     /// <summary>
     /// Defines methods for interacting with user data.
     /// </summary>
-    public interface IUser
+    public interface IUserModel
     {
         /// <summary>
         /// Retrieves user information based on the username.
@@ -23,9 +23,19 @@ namespace SearchNow.src.model.user_model
         /// <param name="username">The username of the user whose password is to be updated.</param>
         /// <param name="newPassword">The new password to set for the user.</param>
         void UpdatePassword(string username, string newPassword);
+
+        bool UpdateUserBio(string username, string bio);
+
+        public void UpdateUserDisplayName(string username, string newDisplayName);
+
+        public void UpdateEmail(string username, string newEmail);
+
+        public bool getStatusFromUser(string username);
+
+        public int GetUserId(string username);
     }
 
-    public class UserModel
+    public class UserModel: IUserModel
     {
 
         /// <summary>

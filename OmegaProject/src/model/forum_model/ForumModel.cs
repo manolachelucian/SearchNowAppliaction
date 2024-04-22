@@ -6,10 +6,16 @@ using SearchNow.src.objects.user;
 
 namespace SearchNow.src.model.forum_model
 {
+
+    public interface IForumModel
+    {
+        Forum GetLoadForumDetails(string forumName);
+    }
+
     /// <summary>
     /// Represents the model for forum-related operations.
     /// </summary>
-    public class ForumModel
+    public class ForumModel : IForumModel
     {
         /// <summary>
         /// Retrieves details of a forum.

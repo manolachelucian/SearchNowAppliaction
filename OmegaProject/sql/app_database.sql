@@ -60,7 +60,7 @@ CREATE TABLE `comments` (
   KEY `user_id` (`user_id`),
   CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`forum_id`) REFERENCES `forums` (`forum_id`) ON DELETE CASCADE,
   CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id_user`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +69,7 @@ CREATE TABLE `comments` (
 
 LOCK TABLES `comments` WRITE;
 /*!40000 ALTER TABLE `comments` DISABLE KEYS */;
-INSERT INTO `comments` VALUES (7,2,38,'adwadaw','2024-04-15 15:20:24'),(8,2,38,'asdawdaw','2024-04-15 15:20:27'),(19,3,38,'ahij','2024-04-15 20:38:52'),(28,3,39,'adada','2024-04-16 20:19:04'),(112,19,1,'haha','2024-04-21 15:33:57'),(113,22,2,'haha','2024-04-21 15:34:13'),(114,21,2,'haha','2024-04-21 15:34:16'),(115,20,2,'haha','2024-04-21 15:34:20'),(116,19,2,'hahah','2024-04-21 15:34:22'),(118,22,1,'film\r\n','2024-04-21 19:38:32'),(119,22,1,'ahoj lidi jak se mate?','2024-04-21 19:38:39'),(120,22,1,'co delate?\r\n','2024-04-21 19:38:43'),(121,22,2,'cau lidi','2024-04-21 19:40:58'),(122,19,2,'cau lidi jak se mate?','2024-04-21 19:41:06'),(123,23,2,'ahoj lidi','2024-04-21 19:41:42'),(124,24,3,'how to start?','2024-04-21 19:42:55'),(125,22,3,'Hello Guys','2024-04-21 19:43:20'),(126,19,3,'test test','2024-04-21 19:43:25'),(128,25,3,'hello','2024-04-22 06:31:10'),(129,25,1,'could you guys help me as well?','2024-04-22 06:31:38'),(130,25,3,'haha','2024-04-22 06:42:21'),(131,25,3,'i cant help you \r\n','2024-04-22 06:42:33'),(132,25,3,'it is really hard for me sorry :<','2024-04-22 06:42:48');
+INSERT INTO `comments` VALUES (7,2,38,'adwadaw','2024-04-15 15:20:24'),(8,2,38,'asdawdaw','2024-04-15 15:20:27'),(19,3,38,'ahij','2024-04-15 20:38:52'),(28,3,39,'adada','2024-04-16 20:19:04'),(112,19,1,'haha','2024-04-21 15:33:57'),(113,22,2,'haha','2024-04-21 15:34:13'),(114,21,2,'haha','2024-04-21 15:34:16'),(115,20,2,'haha','2024-04-21 15:34:20'),(116,19,2,'hahah','2024-04-21 15:34:22'),(118,22,1,'film\r\n','2024-04-21 19:38:32'),(119,22,1,'ahoj lidi jak se mate?','2024-04-21 19:38:39'),(120,22,1,'co delate?\r\n','2024-04-21 19:38:43'),(121,22,2,'cau lidi','2024-04-21 19:40:58'),(122,19,2,'cau lidi jak se mate?','2024-04-21 19:41:06'),(123,23,2,'ahoj lidi','2024-04-21 19:41:42'),(124,24,3,'how to start?','2024-04-21 19:42:55'),(125,22,3,'Hello Guys','2024-04-21 19:43:20'),(126,19,3,'test test','2024-04-21 19:43:25'),(128,25,3,'hello','2024-04-22 06:31:10'),(129,25,1,'could you guys help me as well?','2024-04-22 06:31:38'),(130,25,3,'haha','2024-04-22 06:42:21'),(131,25,3,'i cant help you \r\n','2024-04-22 06:42:33'),(132,25,3,'it is really hard for me sorry :<','2024-04-22 06:42:48'),(134,26,3,'hi','2024-04-22 08:47:31'),(135,26,3,'hi','2024-04-22 08:52:27'),(136,24,2,'awdawd','2024-04-22 08:55:11'),(137,21,2,'awdawdawda','2024-04-22 08:55:14'),(138,26,2,'awdawd','2024-04-22 08:57:10'),(139,26,1,'dawdaw','2024-04-22 08:59:53'),(140,26,1,'test','2024-04-22 09:01:18'),(141,24,2,'hi','2024-04-22 09:01:53');
 /*!40000 ALTER TABLE `comments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `forums` (
   UNIQUE KEY `forum_name_UNIQUE` (`forum_name`),
   KEY `forums_ibfk_1` (`creator_user_id`),
   CONSTRAINT `forums_ibfk_1` FOREIGN KEY (`creator_user_id`) REFERENCES `users` (`id_user`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,7 +99,7 @@ CREATE TABLE `forums` (
 
 LOCK TABLES `forums` WRITE;
 /*!40000 ALTER TABLE `forums` DISABLE KEYS */;
-INSERT INTO `forums` VALUES (19,'zkouska','','2024-04-21 15:33:29',1),(20,'zkouska123','','2024-04-21 15:33:33',1),(21,'spse jecna','','2024-04-21 15:33:36',1),(22,'hahaha','','2024-04-21 15:33:39',1),(23,'Fotbal','Premier League','2024-04-21 19:41:33',2),(24,'Programming forum','how to begin?','2024-04-21 19:42:45',3),(25,'How to make spaghetti','I am hungry','2024-04-21 23:27:58',1);
+INSERT INTO `forums` VALUES (19,'zkouska','','2024-04-21 15:33:29',1),(20,'zkouska123','','2024-04-21 15:33:33',1),(21,'spse jecna','','2024-04-21 15:33:36',1),(22,'hahaha','','2024-04-21 15:33:39',1),(23,'Fotbal','Premier League','2024-04-21 19:41:33',2),(24,'Programming forum','how to begin?','2024-04-21 19:42:45',3),(25,'How to make spaghetti','I am hungry','2024-04-21 23:27:58',1),(26,'Text mee','','2024-04-22 08:47:18',2);
 /*!40000 ALTER TABLE `forums` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,13 +113,16 @@ DROP TABLE IF EXISTS `notifications`;
 CREATE TABLE `notifications` (
   `notificaiton_id` int NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
-  `message_text` varchar(255) NOT NULL,
+  `other_user_id` int NOT NULL,
+  `message` varchar(255) NOT NULL,
   `Timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `isRead` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`notificaiton_id`),
   KEY `user_id` (`user_id`),
-  CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `other_user_id` (`other_user_id`),
+  CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id_user`),
+  CONSTRAINT `notifications_ibfk_2` FOREIGN KEY (`other_user_id`) REFERENCES `users` (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,7 +131,7 @@ CREATE TABLE `notifications` (
 
 LOCK TABLES `notifications` WRITE;
 /*!40000 ALTER TABLE `notifications` DISABLE KEYS */;
-INSERT INTO `notifications` VALUES (1,1,'','2024-04-21 14:07:39',1),(2,1,'','2024-04-21 14:07:42',1),(3,1,'','2024-04-21 14:07:45',1),(4,1,'','2024-04-21 14:07:47',1),(5,1,'','2024-04-21 14:26:40',1),(6,1,'','2024-04-21 14:26:41',1),(7,1,'','2024-04-21 14:26:43',1),(8,1,'','2024-04-21 14:26:45',1),(9,1,'ahoj','2024-04-21 19:09:20',0),(10,2,'adcawiodoaiwbndoawboidawoidbaoiwdboaiwdboawda1231231412','2024-04-21 19:09:54',0),(11,2,'cau lidi','2024-04-21 19:40:59',0),(12,2,'cau lidi jak se mate?','2024-04-21 19:41:07',0),(13,3,'Hello Guys','2024-04-21 19:43:21',0),(14,3,'test test','2024-04-21 19:43:26',0),(15,2,'Hi','2024-04-22 06:30:50',0),(16,3,'hello','2024-04-22 06:31:11',0),(17,3,'haha','2024-04-22 06:42:22',0),(18,3,'i cant help you \r\n','2024-04-22 06:42:34',0),(19,3,'it is really hard for me sorry :<','2024-04-22 06:42:48',0);
+INSERT INTO `notifications` VALUES (1,1,2,'ahoj','2024-04-22 08:50:25',0),(2,2,1,'test','2024-04-22 09:01:19',0),(3,3,2,'hi','2024-04-22 09:01:55',0);
 /*!40000 ALTER TABLE `notifications` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +233,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-22  9:28:13
+-- Dump completed on 2024-04-22 11:10:31

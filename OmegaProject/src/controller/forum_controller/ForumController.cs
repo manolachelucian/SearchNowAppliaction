@@ -84,7 +84,7 @@ namespace SearchNow.src.controller.forum_controller
                         // Send notification if the commenter is not the forum creator
                         if (currentUser.Id != ownerId)
                         {
-                            notificationController.SendNotification(ownerId, commentText);
+                            notificationController.SendNotification(ownerId, currentUser.Id, commentText);
                         }
                     }
                     else

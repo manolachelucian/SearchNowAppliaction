@@ -38,7 +38,6 @@
             listBoxComments = new ListBox();
             deleteButton = new Button();
             panel1 = new Panel();
-            filterComboBox = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -149,25 +148,12 @@
             panel1.Size = new Size(498, 251);
             panel1.TabIndex = 8;
             // 
-            // filterComboBox
-            // 
-            filterComboBox.Cursor = Cursors.Hand;
-            filterComboBox.FlatStyle = FlatStyle.Flat;
-            filterComboBox.ForeColor = Color.Gray;
-            filterComboBox.FormattingEnabled = true;
-            filterComboBox.Location = new Point(364, 244);
-            filterComboBox.Name = "filterComboBox";
-            filterComboBox.Size = new Size(120, 25);
-            filterComboBox.TabIndex = 9;
-            filterComboBox.Text = "Filter";
-            // 
             // ForumDetailsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(498, 527);
-            Controls.Add(filterComboBox);
             Controls.Add(panel1);
             Controls.Add(deleteButton);
             Controls.Add(btnAddComment);
@@ -198,6 +184,5 @@
         private System.Windows.Forms.ListBox listBoxComments;
         private Button deleteButton;
         private Panel panel1;
-        private ComboBox filterComboBox;
     }
 }

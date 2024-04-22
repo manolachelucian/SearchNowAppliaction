@@ -596,3 +596,142 @@ LOG : [22/04/2024 08:44:10]: login has been successful aisuru
 
 LOG : [22/04/2024 08:44:12]: Successful load forum
 
+LOG : [22/04/2024 10:30:44]: login has been successful aisuru
+
+
+ERROR :  [22/04/2024 10:30:48]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [22/04/2024 10:30:48]: Unknown column 'notification_id' in 'where clause'
+
+LOG : [22/04/2024 10:46:52]: login has been successful aisuru
+
+
+ERROR :  [22/04/2024 10:46:53]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:46:53]: Unknown column 'n.message_text' in 'field list'
+
+LOG : [22/04/2024 10:47:02]: Successful load forum
+
+LOG : [22/04/2024 10:47:04]: Successful load forum
+
+LOG : [22/04/2024 10:47:07]: Successful load forum
+
+LOG : [22/04/2024 10:47:09]: Successful load forum
+
+LOG : [22/04/2024 10:47:11]: Successful load forum
+
+LOG : [22/04/2024 10:47:18]: Creating forum
+
+LOG : [22/04/2024 10:47:28]: login has been successful demo
+
+
+LOG : [22/04/2024 10:47:29]: Successful load forum
+
+ERROR :  [22/04/2024 10:47:32]: Unknown column 'message_text' in 'field list'
+
+LOG : [22/04/2024 10:47:38]: login has been successful aisuru
+
+
+LOG : [22/04/2024 10:47:41]: Successful load forum
+
+ERROR :  [22/04/2024 10:47:43]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:47:43]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:47:45]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:47:45]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:47:46]: Unknown column 'n.message_text' in 'field list'
+
+LOG : [22/04/2024 10:48:10]: login has been successful aisuru
+
+
+ERROR :  [22/04/2024 10:48:11]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:48:11]: Unknown column 'n.message_text' in 'field list'
+
+LOG : [22/04/2024 10:52:25]: login has been successful demo
+
+
+LOG : [22/04/2024 10:52:25]: Successful load forum
+
+ERROR :  [22/04/2024 10:52:28]: Incorrect integer value: 'hi' for column 'other_user_id' at row 1
+
+LOG : [22/04/2024 10:52:45]: login has been successful aisuru
+
+
+ERROR :  [22/04/2024 10:52:46]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:52:46]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:52:47]: Unknown column 'n.message_text' in 'field list'
+
+ERROR :  [22/04/2024 10:52:48]: Unknown column 'n.message_text' in 'field list'
+
+LOG : [22/04/2024 10:55:06]: login has been successful aisuru
+
+
+LOG : [22/04/2024 10:55:08]: Successful load forum
+
+LOG : [22/04/2024 10:55:10]: Successful load forum
+
+ERROR :  [22/04/2024 10:55:12]: Incorrect integer value: 'awdawd' for column 'other_user_id' at row 1
+
+LOG : [22/04/2024 10:55:13]: Successful load forum
+
+ERROR :  [22/04/2024 10:55:15]: Incorrect integer value: 'awdawdawda' for column 'other_user_id' at row 1
+
+LOG : [22/04/2024 10:57:08]: login has been successful aisuru
+
+
+LOG : [22/04/2024 10:57:09]: Successful load forum
+
+LOG : [22/04/2024 10:57:52]: login has been successful admin
+
+
+ERROR :  [22/04/2024 10:57:57]: Unknown column 'notification_id' in 'where clause'
+
+LOG : [22/04/2024 10:59:49]: Successful load forum
+
+ERROR :  [22/04/2024 10:59:54]: Incorrect integer value: 'dawdaw' for column 'other_user_id' at row 1
+
+LOG : [22/04/2024 11:00:04]: login has been successful aisuru
+
+
+LOG : [22/04/2024 11:01:14]: login has been successful admin
+
+
+LOG : [22/04/2024 11:01:15]: Successful load forum
+
+LOG : [22/04/2024 11:01:19]: Notification inserted successfully.
+
+LOG : [22/04/2024 11:01:34]: login has been successful aisuru
+
+
+LOG : [22/04/2024 11:01:43]: Successful load forum
+
+LOG : [22/04/2024 11:01:45]: Successful load forum
+
+LOG : [22/04/2024 11:01:48]: Successful load forum
+
+LOG : [22/04/2024 11:01:55]: Notification inserted successfully.
+
+LOG : [22/04/2024 11:02:04]: login has been successful demo
+
+
+LOG : [22/04/2024 11:19:28]: login has been successful admin
+
+
+LOG : [22/04/2024 11:20:53]: login has been successful aisuru
+
+
+LOG : [22/04/2024 11:21:44]: Successful load forum
+
+LOG : [22/04/2024 11:21:51]: Notification inserted successfully.
+
+LOG : [22/04/2024 11:21:56]: Notification inserted successfully.
+
+LOG : [22/04/2024 11:22:03]: login has been successful admin
+
+
