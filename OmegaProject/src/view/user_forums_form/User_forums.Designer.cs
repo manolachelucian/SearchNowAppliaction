@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_forums));
-            dataGridView = new DataGridView();
+            userFormsGrid = new DataGridView();
             deleteButton = new Button();
             label1 = new Label();
             deleteForumButton = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)userFormsGrid).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView
+            // userFormsGrid
             // 
-            dataGridView.BackgroundColor = Color.LightGray;
-            dataGridView.BorderStyle = BorderStyle.None;
-            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Cursor = Cursors.Hand;
-            dataGridView.Location = new Point(12, 49);
-            dataGridView.Name = "dataGridView";
-            dataGridView.Size = new Size(560, 400);
-            dataGridView.TabIndex = 0;
+            userFormsGrid.BackgroundColor = Color.LightGray;
+            userFormsGrid.BorderStyle = BorderStyle.None;
+            userFormsGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            userFormsGrid.Cursor = Cursors.Hand;
+            userFormsGrid.Location = new Point(12, 49);
+            userFormsGrid.Name = "userFormsGrid";
+            userFormsGrid.Size = new Size(560, 400);
+            userFormsGrid.TabIndex = 0;
             // 
             // deleteButton
             // 
@@ -88,20 +88,20 @@
             ClientSize = new Size(584, 461);
             Controls.Add(deleteForumButton);
             Controls.Add(label1);
-            Controls.Add(dataGridView);
+            Controls.Add(userFormsGrid);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "User_forums";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "User_forums";
-            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)userFormsGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private DataGridView dataGridView;
+        private DataGridView userFormsGrid;
         private Button deleteButton;
         private Label label1;
         private Button deleteForumButton;

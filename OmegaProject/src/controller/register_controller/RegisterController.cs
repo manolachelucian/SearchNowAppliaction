@@ -1,4 +1,5 @@
 ﻿using SearchNow.src.model.login_register_access;
+using SearchNow.src.objects;
 
 namespace SearchNow.src.controller.register_controller
 {
@@ -35,14 +36,15 @@ namespace SearchNow.src.controller.register_controller
                 bool registrationAttempt = registerModel.registerUser(username, password, email, displayName, dateOfBirth);
                 if (registrationAttempt == true)
                 {
-
                     result = true;
+                    Logger.WriteLog("Registration has been successful", false);
                 }
             }
             catch (Exception ex)
             {
                 // Handle any exceptions that occur during registration
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message, true);
             }
             return result;
         }

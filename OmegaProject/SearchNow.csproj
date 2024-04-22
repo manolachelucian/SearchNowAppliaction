@@ -29,7 +29,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="doc\" />
+    <Folder Include="vendor\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="src\App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

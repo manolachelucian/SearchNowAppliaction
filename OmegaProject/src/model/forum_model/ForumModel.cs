@@ -1,13 +1,21 @@
 ﻿using MySql.Data.MySqlClient;
+using SearchNow.src.objects;
 using SearchNow.src.objects.forum;
 using SearchNow.src.objects.forum.comment;
 using SearchNow.src.objects.user;
 
 namespace SearchNow.src.model.forum_model
 {
+    /// <summary>
+    /// Represents the model for forum-related operations.
+    /// </summary>
     public class ForumModel
     {
-
+        /// <summary>
+        /// Retrieves details of a forum.
+        /// </summary>
+        /// <param name="forumName">The name of the forum.</param>
+        /// <returns>The forum details.</returns>
         public Forum GetLoadForumDetails(string forumName)
         {
             Forum forum = null;
@@ -28,13 +36,14 @@ namespace SearchNow.src.model.forum_model
                                 forum = new Forum
                                 {
                                     Id = reader.GetInt32("forum_id"),
-                                    ForumName = "Název fóra: " + reader.GetString("forum_name"),
-                                    Description = "Popis fóra: " + reader.GetString("forum_description"),
-                                    CreatedAt = "Vytvořeno: " + reader.GetDateTime("created_at").ToString(),
-                                    CreatedBy = "Vytvořil: " + reader.GetString("creator_username")
+                                    ForumName = "Name of forum: " + reader.GetString("forum_name"),
+                                    Description = "Description: " + reader.GetString("forum_description"),
+                                    CreatedAt = "Created: " + reader.GetDateTime("created_at").ToString(),
+                                    CreatedBy = "Created by: " + reader.GetString("creator_username")
                                 };
-
+                                Logger.WriteLog("Successful load forum",false);
                                 return forum;
+                                
                             }
 
                         }
@@ -43,15 +52,21 @@ namespace SearchNow.src.model.forum_model
             }
             catch (MySqlException ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
             return forum;
         }
-
+        /// <summary>
+        /// Loads comments for a forum into a ListBox control.
+        /// </summary>
+        /// <param name="listBoxComments">The ListBox control to load comments into.</param>
+        /// <param name="forum">The forum for which comments are loaded.</param>
         public void LoadComments(ListBox listBoxComments, Forum forum)
         {
             try
@@ -86,17 +101,27 @@ namespace SearchNow.src.model.forum_model
             }
             catch (MySqlException ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
         }
 
 
 
-
+        /// <summary>
+        /// Posts a comment to a forum.
+        /// </summary>
+        /// <param name="currentUser">The user posting the comment.</param>
+        /// <param name="commentText">The text of the comment.</param>
+        /// <param name="listBoxComments">The ListBox control displaying comments.</param>
+        /// <param name="textBoxComment">The TextBox control for entering comments.</param>
+        /// <param name="forum">The forum to which the comment is posted.</param>
+        /// <returns>True if the comment was successfully posted; otherwise, false.</returns>
         public bool commentFunction(User currentUser, string commentText, ListBox listBoxComments, TextBox textBoxComment, Forum forum)
         {
             bool result = false;
@@ -124,15 +149,20 @@ namespace SearchNow.src.model.forum_model
             }
             catch (MySqlException ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
+                Logger.WriteLog(ex.Message, false);
                 MessageBox.Show(ex.Message);
             }
             return result;
         }
-
+        /// <summary>
+        /// Deletes a comment from a forum.
+        /// </summary>
+        /// <param name="commentId">The ID of the comment to delete.</param>
         public void DeleteComment(int commentId)
         {
             try
@@ -149,25 +179,32 @@ namespace SearchNow.src.model.forum_model
 
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Komentář byl úspěšně smazán.", "Úspěch", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Comment has been successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Nepodařilo se smazat komentář.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Failed to delete the comment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Chyba při komunikaci s databází: " + ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error communicating with the database: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Chyba: " + ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message, false);
             }
         }
 
+        /// <summary>
+        /// Gets the author ID of a comment.
+        /// </summary>
+        /// <param name="commentId">The ID of the comment.</param>
+        /// <returns>The ID of the comment's author.</returns>
         public int GetCommentAuthorId(int commentId)
         {
             int result = 0;
@@ -193,16 +230,58 @@ namespace SearchNow.src.model.forum_model
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message, "MySql", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message, false);
             }
             return result;
         }
 
+        /// <summary>
+        /// Retrieves the user ID associated with a forum.
+        /// </summary>
+        /// <param name="forumId">The ID of the forum.</param>
+        /// <returns>The user ID associated with the forum.</returns>
+        public int GetUserIdByForumId(int forumId)
+        {
+            int userId = -1; // Default value indicating failure
+            try
+            {
+                string query = "SELECT creator_user_id FROM forums WHERE forum_id = @ForumId";
 
+                using (MySqlConnection connection = new MySqlConnection(DatabaseConnection.GetConnection()))
+                {
+                    connection.Open();
 
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ForumId", forumId);
 
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Handle MySQL exception
+                Console.WriteLine("MySQL Error: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                Console.WriteLine("Error: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
+            }
+
+            return userId;
+        }
     }
 }

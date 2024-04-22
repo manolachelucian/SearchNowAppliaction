@@ -3,8 +3,19 @@ using System.Data;
 
 namespace SearchNow.src.model.login_register_access
 {
+    /// <summary>
+    /// Represents the contract for registering users.
+    /// </summary>
     public interface IRegisterModel
-    {
+    {/// <summary>
+     /// Registers a new user with the provided information.
+     /// </summary>
+     /// <param name="username">The username of the new user.</param>
+     /// <param name="password">The password of the new user.</param>
+     /// <param name="email">The email address of the new user.</param>
+     /// <param name="displayName">The display name of the new user.</param>
+     /// <param name="dateOfBirth">The date of birth of the new user.</param>
+     /// <returns>True if the user was successfully registered; otherwise, false.</returns>
         bool registerUser(string username, string password, string email, string displayName, string dateOfBirth);
     }
 

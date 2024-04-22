@@ -1,12 +1,17 @@
 ﻿using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI.Common;
 using System.Data;
 
 namespace SearchNow.src.model.admin_model;
-
+/// <summary>
+/// Represents the model for administrative actions.
+/// </summary>
 public class AdminModel
 {
-
+    /// <summary>
+    /// Bans a user from the system.
+    /// </summary>
+    /// <param name="username">The username of the user to ban.</param>
+    /// <returns>True if the user was successfully banned; otherwise, false.</returns>
     public bool banUser(string username)
     {
         bool result = false;
@@ -32,7 +37,10 @@ public class AdminModel
         }
         return result;
     }
-
+    /// <summary>
+    /// Suspends a user's account.
+    /// </summary>
+    /// <param name="username">The username of the user to suspend.</param>
     public void suspendUser(string username)
     {
         try
@@ -56,7 +64,10 @@ public class AdminModel
         }
     }
 
-
+    /// <summary>
+    /// Unbans a previously banned user.
+    /// </summary>
+    /// <param name="username">The username of the user to unban.</param>
     public void unBanUser(string username)
     {
         try

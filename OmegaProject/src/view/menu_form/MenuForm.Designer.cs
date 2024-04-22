@@ -37,6 +37,7 @@
             profile_form = new Button();
             panel1 = new Panel();
             labelDisplayNameProfile = new Label();
+            notificationButton = new Button();
             panel2 = new Panel();
             label4 = new Label();
             searchProfile = new Button();
@@ -49,6 +50,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            label5 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -56,62 +58,20 @@
             // 
             // listBoxForums
             // 
-            listBoxForums.BackColor = Color.WhiteSmoke;
-            listBoxForums.BorderStyle = BorderStyle.None;
-            listBoxForums.Cursor = Cursors.Hand;
-            listBoxForums.Font = new Font("Nirmala UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listBoxForums.ForeColor = Color.Gray;
-            listBoxForums.FormattingEnabled = true;
-            listBoxForums.ItemHeight = 25;
-            listBoxForums.Location = new Point(35, 159);
-            listBoxForums.Margin = new Padding(0);
-            listBoxForums.Name = "listBoxForums";
-            listBoxForums.Size = new Size(650, 400);
-            listBoxForums.TabIndex = 6;
+            listBoxForums.BackColor = Color.WhiteSmoke;listBoxForums.BorderStyle = BorderStyle.None;listBoxForums.Cursor = Cursors.Hand;listBoxForums.Font = new Font("Nirmala UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);listBoxForums.ForeColor = Color.Gray;listBoxForums.FormattingEnabled = true;listBoxForums.ItemHeight = 25;listBoxForums.Location = new Point(35, 159);listBoxForums.Margin = new Padding(0);listBoxForums.Name = "listBoxForums";listBoxForums.Size = new Size(650, 400);listBoxForums.TabIndex = 6;
             // 
             // createDiscussion
             // 
             createDiscussion.BackColor = Color.Transparent;
-            createDiscussion.Cursor = Cursors.Hand;
-            createDiscussion.FlatAppearance.BorderColor = Color.LightGray;
-            createDiscussion.FlatStyle = FlatStyle.Flat;
-            createDiscussion.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            createDiscussion.ForeColor = Color.Black;
-            createDiscussion.Image = (Image)resources.GetObject("createDiscussion.Image");
-            createDiscussion.ImageAlign = ContentAlignment.MiddleLeft;
-            createDiscussion.Location = new Point(12, 122);
-            createDiscussion.Name = "createDiscussion";
-            createDiscussion.Size = new Size(145, 40);
-            createDiscussion.TabIndex = 9;
-            createDiscussion.Text = "Create Forum";
-            createDiscussion.TextAlign = ContentAlignment.MiddleRight;
-            createDiscussion.UseVisualStyleBackColor = false;
+            createDiscussion.Cursor = Cursors.Hand;createDiscussion.FlatAppearance.BorderColor = Color.LightGray;createDiscussion.FlatStyle = FlatStyle.Flat;createDiscussion.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);createDiscussion.ForeColor = Color.Black;createDiscussion.Image = (Image)resources.GetObject("createDiscussion.Image");createDiscussion.ImageAlign = ContentAlignment.MiddleLeft;createDiscussion.Location = new Point(10, 165); createDiscussion.Name = "createDiscussion";createDiscussion.Size = new Size(145, 40);createDiscussion.TabIndex = 9;createDiscussion.Text = "Create Forum";createDiscussion.TextAlign = ContentAlignment.MiddleRight;createDiscussion.UseVisualStyleBackColor = false;
             // 
             // searchForum
             // 
-            searchForum.BorderStyle = BorderStyle.FixedSingle;
-            searchForum.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            searchForum.ForeColor = Color.Gray;
-            searchForum.Location = new Point(347, 114);
-            searchForum.Multiline = true;
-            searchForum.Name = "searchForum";
-            searchForum.Size = new Size(231, 32);
-            searchForum.TabIndex = 10;
+            searchForum.BorderStyle = BorderStyle.FixedSingle;searchForum.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);searchForum.ForeColor = Color.Gray;searchForum.Location = new Point(347, 114);searchForum.Multiline = true;searchForum.Name = "searchForum";searchForum.Size = new Size(231, 32);searchForum.TabIndex = 10;
             // 
             // searchForumButton
             // 
-            searchForumButton.BackColor = Color.RoyalBlue;
-            searchForumButton.Cursor = Cursors.Hand;
-            searchForumButton.FlatAppearance.BorderSize = 0;
-            searchForumButton.FlatStyle = FlatStyle.Flat;
-            searchForumButton.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            searchForumButton.ForeColor = Color.White;
-            searchForumButton.Location = new Point(584, 114);
-            searchForumButton.Name = "searchForumButton";
-            searchForumButton.Size = new Size(101, 32);
-            searchForumButton.TabIndex = 11;
-            searchForumButton.Text = "Search";
-            searchForumButton.UseVisualStyleBackColor = false;
+            searchForumButton.BackColor = Color.RoyalBlue;searchForumButton.Cursor = Cursors.Hand;searchForumButton.FlatAppearance.BorderSize = 0;searchForumButton.FlatStyle = FlatStyle.Flat;searchForumButton.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);searchForumButton.ForeColor = Color.White;searchForumButton.Location = new Point(584, 114);searchForumButton.Name = "searchForumButton";searchForumButton.Size = new Size(101, 32);searchForumButton.TabIndex = 11;searchForumButton.Text = "Search";searchForumButton.UseVisualStyleBackColor = false;
             // 
             // _btnLogOut
             // 
@@ -138,7 +98,7 @@
             profile_form.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             profile_form.ForeColor = Color.Transparent;
             profile_form.Image = (Image)resources.GetObject("profile_form.Image");
-            profile_form.Location = new Point(853, 12);
+            profile_form.Location = new Point(850, 13);
             profile_form.Name = "profile_form";
             profile_form.RightToLeft = RightToLeft.No;
             profile_form.Size = new Size(35, 36);
@@ -148,27 +108,31 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.RoyalBlue;
-            panel1.Controls.Add(labelDisplayNameProfile);
-            panel1.Controls.Add(profile_form);
-            panel1.Dock = DockStyle.Top;
-            panel1.ForeColor = Color.White;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(900, 60);
-            panel1.TabIndex = 12;
+            panel1.BackColor = Color.RoyalBlue;panel1.Controls.Add(label5);panel1.Controls.Add(labelDisplayNameProfile);panel1.Controls.Add(profile_form);panel1.Dock = DockStyle.Top;panel1.ForeColor = Color.White;panel1.Location = new Point(0, 0);panel1.Name = "panel1";panel1.Size = new Size(900, 60);panel1.TabIndex = 12;
             // 
             // labelDisplayNameProfile
             // 
             labelDisplayNameProfile.AutoSize = true;
             labelDisplayNameProfile.BackColor = Color.Transparent;
             labelDisplayNameProfile.Font = new Font("Nirmala UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelDisplayNameProfile.Location = new Point(766, 20);
+            labelDisplayNameProfile.Location = new Point(766, 22);
             labelDisplayNameProfile.Name = "labelDisplayNameProfile";
             labelDisplayNameProfile.Size = new Size(46, 20);
             labelDisplayNameProfile.TabIndex = 6;
             labelDisplayNameProfile.Text = "name";
             labelDisplayNameProfile.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // notificationButton
+            // 
+            notificationButton.BackColor = Color.Transparent;
+            notificationButton.Cursor = Cursors.Hand;
+            notificationButton.ForeColor = Color.Transparent;
+            notificationButton.Image = (Image)resources.GetObject("notificationButton.Image");
+            notificationButton.Location = new Point(668, 3);
+            notificationButton.Name = "notificationButton";
+            notificationButton.Size = new Size(35, 37);
+            notificationButton.TabIndex = 7;
+            notificationButton.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -191,7 +155,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Gray;
-            label4.Location = new Point(6, 6);
+            label4.Location = new Point(12, 25);
             label4.Name = "label4";
             label4.Size = new Size(79, 17);
             label4.TabIndex = 14;
@@ -207,7 +171,7 @@
             searchProfile.ForeColor = Color.DimGray;
             searchProfile.Image = (Image)resources.GetObject("searchProfile.Image");
             searchProfile.ImageAlign = ContentAlignment.MiddleLeft;
-            searchProfile.Location = new Point(21, 61);
+            searchProfile.Location = new Point(21, 90);
             searchProfile.Name = "searchProfile";
             searchProfile.Size = new Size(123, 34);
             searchProfile.TabIndex = 11;
@@ -224,7 +188,7 @@
             myForumsButton.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             myForumsButton.ForeColor = Color.Black;
             myForumsButton.ImageAlign = ContentAlignment.MiddleLeft;
-            myForumsButton.Location = new Point(12, 187);
+            myForumsButton.Location = new Point(10, 237);
             myForumsButton.Name = "myForumsButton";
             myForumsButton.Size = new Size(145, 40);
             myForumsButton.TabIndex = 12;
@@ -240,7 +204,7 @@
             adminMenuButton.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             adminMenuButton.ForeColor = Color.Black;
             adminMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
-            adminMenuButton.Location = new Point(12, 252);
+            adminMenuButton.Location = new Point(10, 312);
             adminMenuButton.Name = "adminMenuButton";
             adminMenuButton.Size = new Size(145, 40);
             adminMenuButton.TabIndex = 10;
@@ -252,7 +216,7 @@
             searchUser_textbox.Cursor = Cursors.IBeam;
             searchUser_textbox.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             searchUser_textbox.ForeColor = Color.Gray;
-            searchUser_textbox.Location = new Point(6, 26);
+            searchUser_textbox.Location = new Point(6, 45);
             searchUser_textbox.Multiline = true;
             searchUser_textbox.Name = "searchUser_textbox";
             searchUser_textbox.Size = new Size(170, 30);
@@ -260,6 +224,7 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(notificationButton);
             panel3.Controls.Add(refreshForumButton);
             panel3.Controls.Add(filterBox);
             panel3.Controls.Add(label3);
@@ -292,7 +257,7 @@
             filterBox.FlatStyle = FlatStyle.Flat;
             filterBox.ForeColor = Color.Gray;
             filterBox.FormattingEnabled = true;
-            filterBox.Location = new Point(132, 118);
+            filterBox.Location = new Point(132, 120);
             filterBox.Name = "filterBox";
             filterBox.Size = new Size(209, 25);
             filterBox.TabIndex = 15;
@@ -328,6 +293,16 @@
             label1.Size = new Size(126, 45);
             label1.TabIndex = 12;
             label1.Text = "Forums";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Nirmala UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(21, 12);
+            label5.Name = "label5";
+            label5.Size = new Size(134, 32);
+            label5.TabIndex = 7;
+            label5.Text = "SearchNow";
             // 
             // MenuForm
             // 
@@ -373,5 +348,7 @@
         private Label labelDisplayNameProfile;
         private Label label4;
         private TextBox searchUser_textbox;
+        private Button notificationButton;
+        private Label label5;
     }
 }

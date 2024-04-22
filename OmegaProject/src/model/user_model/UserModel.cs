@@ -1,21 +1,28 @@
 ﻿using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Tls;
+using SearchNow.src.objects;
 using SearchNow.src.objects.user;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace SearchNow.src.model.user_model
 {
+    /// <summary>
+    /// Defines methods for interacting with user data.
+    /// </summary>
     public interface IUser
     {
-       User GetUser(string username);
-       void UpdatePassword(string username, string newPassword);
+        /// <summary>
+        /// Retrieves user information based on the username.
+        /// </summary>
+        /// <param name="username">The username of the user to retrieve.</param>
+        /// <returns>The user object associated with the specified username, or null if not found.</returns>
+        User GetUser(string username);
+
+        /// <summary>
+        /// Updates the password of the user with the specified username.
+        /// </summary>
+        /// <param name="username">The username of the user whose password is to be updated.</param>
+        /// <param name="newPassword">The new password to set for the user.</param>
+        void UpdatePassword(string username, string newPassword);
     }
 
     public class UserModel
@@ -67,10 +74,12 @@ namespace SearchNow.src.model.user_model
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
 
             return user;
@@ -100,13 +109,21 @@ namespace SearchNow.src.model.user_model
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error updating password: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
         }
-        public void UpdateUserBio(string username, string bio)
+        /// <summary>
+        /// Updates the bio of a user in the database.
+        /// </summary>
+        /// <param name="username">The username of the user whose bio is to be updated.</param>
+        /// <param name="bio">The new bio to be set for the user.</param>
+        /// <returns>True if the user's bio was successfully updated; otherwise, false.</returns>
+        public bool UpdateUserBio(string username, string bio)
         {
             try
             {
@@ -118,19 +135,27 @@ namespace SearchNow.src.model.user_model
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@p_username", username);
                         command.Parameters.AddWithValue("@p_bio", bio);
-                        command.ExecuteNonQuery();
+                        int result = command.ExecuteNonQuery();
+                        if (result > 0)
+                        {
+                            return true;
+                        }
                     }
                 }
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
+            return false;
         }
+
 
         /// <summary>
         /// Updates the display name of a user in the database.
@@ -156,10 +181,12 @@ namespace SearchNow.src.model.user_model
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
         }
 
@@ -187,10 +214,12 @@ namespace SearchNow.src.model.user_model
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
         }
 
@@ -223,15 +252,22 @@ namespace SearchNow.src.model.user_model
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
 
             return userId;
         }
 
+        /// <summary>
+        /// Retrieves the status of a user based on their username.
+        /// </summary>
+        /// <param name="username">The username of the user whose status is to be retrieved.</param>
+        /// <returns>True if the user's status is active (role_id = 1); otherwise, false.</returns>
         public bool getStatusFromUser(string username)
         {
             // Default status to false
@@ -262,7 +298,7 @@ namespace SearchNow.src.model.user_model
                                 int roleId = reader.GetInt32("role_id");
                                 if (roleId == 1)
                                 {
-
+                                    // Set status to true for admin user
                                     return true;
                                 }
                             }
@@ -274,11 +310,13 @@ namespace SearchNow.src.model.user_model
             {
                 // Handle MySQL exception
                 Console.WriteLine("MySQL error: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 // Handle other exceptions
                 Console.WriteLine("Error: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             return status;
         }

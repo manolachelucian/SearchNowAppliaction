@@ -59,13 +59,16 @@ namespace SearchNow.src.model.login_register_access
             {
                 // If a MySQL exception occurs, display the error message
                 MessageBox.Show(ex.Message);
-                
+                Logger.WriteLog(ex.Message, false);
+
             }
             catch (Exception ex)
             {
                 // If any other exception occurs, display the error message
                 MessageBox.Show(ex.Message);
-                
+                Logger.WriteLog(ex.Message, false);
+
+
             }
             // If authentication fails or an exception occurs, return false
             return checkLogin;

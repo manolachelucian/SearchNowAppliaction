@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using SearchNow.src.objects;
 using System.Data;
 
 namespace SearchNow.src.model.validation_model
@@ -28,7 +29,7 @@ namespace SearchNow.src.model.validation_model
     /// </summary>
     public class ValidationModel : IValidationModel
     {
-        /// <inheritdoc/>
+        
         public bool usernameInUse(string username)
         {
             // Variable to store whether the username is in use
@@ -57,11 +58,13 @@ namespace SearchNow.src.model.validation_model
             {
                 // Handles MySQL exceptions
                 Console.WriteLine("MySQL error occurred while checking username: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 // Handles other exceptions
                 Console.WriteLine("Error occurred while checking username: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
 
             // Returns whether the username is in use
@@ -99,11 +102,13 @@ namespace SearchNow.src.model.validation_model
             {
                 // Handles MySQL exceptions
                 Console.WriteLine("MySQL error occurred while checking email availability: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
             catch (Exception ex)
             {
                 // Handles other exceptions
                 Console.WriteLine("Error occurred while checking email availability: " + ex.Message);
+                Logger.WriteLog(ex.Message, false);
             }
 
             // Returns whether the email is in use

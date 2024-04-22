@@ -104,12 +104,14 @@ namespace SearchNow.src.objects.check_functions
                     connection.Open();
                     // If the connection is successful, display a success message
                     MessageBox.Show("Connection Successful", "Connection status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Logger.WriteLog("Successful Database Connection", false);
                 }
             }
             catch (MySqlException ex)
             {
                 // If the connection fails, display an error message
-                MessageBox.Show("Connection failed!", "Connection status", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Connection failed!"+ex.Message, "Connection status", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message +" "+ex.StackTrace, false);
             }
 
         }

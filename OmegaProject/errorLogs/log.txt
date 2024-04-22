@@ -1,1 +1,598 @@
-﻿
+﻿LOG : [21/04/2024 11:37:51]: login has been successful admin
+
+
+LOG : [21/04/2024 11:44:52]: Successful
+
+LOG : [21/04/2024 11:48:53]: login has been successful aisuru
+
+
+LOG : [21/04/2024 12:03:26]: login has been successful admin
+
+
+LOG : [21/04/2024 12:51:48]: login has been successful admin
+
+
+LOG : [21/04/2024 12:58:20]: login has been successful admin
+
+
+LOG : [21/04/2024 13:00:15]: login has been successful admin
+
+
+LOG : [21/04/2024 13:01:45]: login has been successful admin
+
+
+LOG : [21/04/2024 13:06:48]: login has been successful admin
+
+
+LOG : [21/04/2024 13:11:01]: login has been successful admin
+
+
+LOG : [21/04/2024 13:12:13]: login has been successful aisuru
+
+
+LOG : [21/04/2024 13:19:57]: login has been successful admin
+
+
+LOG : [21/04/2024 13:23:15]: login has been successful admin
+
+
+LOG : [21/04/2024 13:23:18]: Deleted forum successfully
+
+LOG : [21/04/2024 13:23:23]: Deleted forum successfully
+
+LOG : [21/04/2024 13:23:32]: Deleted forum successfully
+
+LOG : [21/04/2024 13:25:49]: login has been successful admin
+
+
+LOG : [21/04/2024 13:25:59]: Deleted forum successfully
+
+LOG : [21/04/2024 13:26:46]: login has been successful admin
+
+
+LOG : [21/04/2024 13:27:06]: Deleted forum successfully
+
+LOG : [21/04/2024 13:31:11]: login has been successful admin
+
+
+LOG : [21/04/2024 13:33:11]: login has been successful admin
+
+
+LOG : [21/04/2024 13:35:31]: login has been successful admin
+
+
+LOG : [21/04/2024 13:38:41]: login has been successful admin
+
+
+LOG : [21/04/2024 15:40:47]: login has been successful admin
+
+
+LOG : [21/04/2024 15:42:51]: login has been successful admin
+
+
+LOG : [21/04/2024 15:45:38]: login has been successful admin
+
+
+LOG : [21/04/2024 15:46:59]: login has been successful admin
+
+
+LOG : [21/04/2024 16:07:06]: login has been successful aisuru
+
+
+LOG : [21/04/2024 16:07:26]: login has been successful admin
+
+
+LOG : [21/04/2024 16:07:58]: login has been successful demo
+
+
+LOG : [21/04/2024 16:17:02]: login has been successful demo
+
+
+LOG : [21/04/2024 16:18:15]: login has been successful demo
+
+
+LOG : [21/04/2024 16:23:09]: login has been successful demo
+
+
+LOG : [21/04/2024 16:25:03]: login has been successful demo
+
+
+LOG : [21/04/2024 16:26:37]: login has been successful admin
+
+
+LOG : [21/04/2024 16:32:50]: login has been successful admin
+
+
+LOG : [21/04/2024 16:33:11]: login has been successful demo
+
+
+LOG : [21/04/2024 16:46:06]: login has been successful demo
+
+
+LOG : [21/04/2024 16:46:44]: login has been successful demo
+
+
+LOG : [21/04/2024 17:25:45]: login has been successful admin
+
+
+LOG : [21/04/2024 17:26:05]: login has been successful demo
+
+
+LOG : [21/04/2024 17:26:23]: login has been successful aisuru
+
+
+LOG : [21/04/2024 17:26:47]: login has been successful demo
+
+
+LOG : [21/04/2024 17:33:23]: login has been successful admin
+
+
+LOG : [21/04/2024 17:34:09]: login has been successful aisuru
+
+
+LOG : [21/04/2024 17:41:27]: login has been successful admin
+
+
+LOG : [21/04/2024 17:50:54]: login has been successful admin
+
+
+LOG : [21/04/2024 17:54:39]: login has been successful admin
+
+
+LOG : [21/04/2024 17:57:36]: login has been successful admin
+
+
+LOG : [21/04/2024 17:59:44]: login has been successful admin
+
+
+LOG : [21/04/2024 18:01:51]: login has been successful admin
+
+
+LOG : [21/04/2024 18:04:23]: login has been successful admin
+
+
+LOG : [21/04/2024 18:05:21]: login has been successful admin
+
+
+LOG : [21/04/2024 18:15:42]: login has been successful demo
+
+
+LOG : [21/04/2024 18:15:52]: Deleted forum successfully
+
+LOG : [21/04/2024 18:16:08]: login has been successful admin
+
+
+ERROR :  [21/04/2024 18:16:12]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:13]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:13]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:14]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:17]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:18]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:18]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:18]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:19]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:21]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:21]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:22]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:44]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:44]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:45]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:45]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:47]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:47]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:16:48]: Unknown column 'notification_id' in 'where clause'
+
+LOG : [21/04/2024 18:22:16]: login has been successful admin
+
+
+LOG : [21/04/2024 18:22:50]: login has been successful admin
+
+
+LOG : [21/04/2024 18:26:04]: login has been successful admin
+
+
+ERROR :  [21/04/2024 18:26:07]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:26:09]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:26:12]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:26:13]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:26:34]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:26:35]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+LOG : [21/04/2024 18:39:01]: login has been successful admin
+
+
+ERROR :  [21/04/2024 18:39:04]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+ERROR :  [21/04/2024 18:39:12]: Column named NotificationId cannot be found. (Parameter 'columnName')
+
+LOG : [21/04/2024 18:47:31]: login has been successful admin
+
+
+ERROR :  [21/04/2024 18:47:35]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:36]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:36]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:36]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:37]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:37]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:39]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:40]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:40]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:47:41]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:50:40]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:50:40]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:50:42]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 18:50:42]: Unknown column 'notification_id' in 'where clause'
+
+LOG : [21/04/2024 18:59:34]: login has been successful admin
+
+
+LOG : [21/04/2024 19:00:02]: login has been successful admin
+
+
+LOG : [21/04/2024 19:03:15]: login has been successful admin
+
+
+LOG : [21/04/2024 19:06:00]: login has been successful admin
+
+
+LOG : [21/04/2024 19:08:14]: login has been successful admin
+
+
+LOG : [21/04/2024 19:13:57]: login has been successful admin
+
+
+LOG : [21/04/2024 19:15:27]: login has been successful admin
+
+
+LOG : [21/04/2024 21:38:09]: login has been successful admin
+
+
+LOG : [21/04/2024 21:38:26]: Successful load forum
+
+ERROR :  [21/04/2024 21:38:53]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:38:53]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:38:55]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:38:55]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:38:59]: Successful load forum
+
+ERROR :  [21/04/2024 21:39:18]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:18]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:19]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:19]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:22]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:22]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:39:22]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:40:13]: Successful load forum
+
+LOG : [21/04/2024 21:40:14]: Successful load forum
+
+LOG : [21/04/2024 21:40:17]: Successful load forum
+
+ERROR :  [21/04/2024 21:40:25]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:25]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:29]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:29]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:30]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:40:30]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:31]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:40:49]: login has been successful aisuru
+
+
+ERROR :  [21/04/2024 21:40:51]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:40:51]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:40:53]: Successful load forum
+
+LOG : [21/04/2024 21:40:59]: Notification inserted successfully.
+
+LOG : [21/04/2024 21:41:00]: Successful load forum
+
+LOG : [21/04/2024 21:41:07]: Notification inserted successfully.
+
+LOG : [21/04/2024 21:41:33]: Creating forum
+
+LOG : [21/04/2024 21:41:36]: Successful load forum
+
+ERROR :  [21/04/2024 21:42:10]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:42:10]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:42:18]: login has been successful demo
+
+
+ERROR :  [21/04/2024 21:42:18]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:42:18]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:42:19]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:42:20]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:42:20]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:42:24]: Successful load forum
+
+LOG : [21/04/2024 21:42:27]: Successful load forum
+
+LOG : [21/04/2024 21:42:29]: Successful load forum
+
+LOG : [21/04/2024 21:42:30]: Successful load forum
+
+LOG : [21/04/2024 21:42:33]: Successful load forum
+
+LOG : [21/04/2024 21:42:34]: Successful load forum
+
+LOG : [21/04/2024 21:42:45]: Creating forum
+
+LOG : [21/04/2024 21:42:48]: Successful load forum
+
+LOG : [21/04/2024 21:43:13]: Successful load forum
+
+LOG : [21/04/2024 21:43:21]: Notification inserted successfully.
+
+LOG : [21/04/2024 21:43:22]: Successful load forum
+
+LOG : [21/04/2024 21:43:26]: Notification inserted successfully.
+
+LOG : [21/04/2024 21:44:13]: login has been successful admin
+
+
+ERROR :  [21/04/2024 21:44:14]: Unknown column 'n.notification_id' in 'field list'
+
+ERROR :  [21/04/2024 21:44:14]: Unknown column 'n.notification_id' in 'field list'
+
+LOG : [21/04/2024 21:46:05]: login has been successful admin
+
+
+ERROR :  [21/04/2024 21:46:06]: Could not find specified column in results: notification_id
+
+ERROR :  [21/04/2024 21:46:06]: Could not find specified column in results: notification_id
+
+ERROR :  [21/04/2024 21:46:07]: Could not find specified column in results: notification_id
+
+ERROR :  [21/04/2024 21:46:08]: Could not find specified column in results: notification_id
+
+LOG : [21/04/2024 21:46:57]: login has been successful admin
+
+
+ERROR :  [21/04/2024 21:47:08]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:09]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:12]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:13]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:16]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:16]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:22]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:25]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:25]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:26]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:27]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:27]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:31]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:31]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:33]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:35]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:36]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:36]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:46]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:47]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:50]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:50]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:51]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:51]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:51]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:52]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:52]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:52]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:54]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:54]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:54]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:55]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:55]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:55]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:57]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:58]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:58]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:58]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:47:58]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:48:00]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:48:00]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:48:00]: Unknown column 'notification_id' in 'where clause'
+
+ERROR :  [21/04/2024 21:48:02]: Unknown column 'notification_id' in 'where clause'
+
+LOG : [21/04/2024 21:55:13]: login has been successful demo
+
+
+LOG : [21/04/2024 21:56:18]: Successful load forum
+
+LOG : [21/04/2024 21:56:23]: Successful load forum
+
+LOG : [21/04/2024 21:56:25]: Successful load forum
+
+LOG : [21/04/2024 21:56:26]: Successful load forum
+
+LOG : [21/04/2024 21:59:28]: login has been successful demo
+
+
+LOG : [21/04/2024 22:00:34]: login has been successful demo
+
+
+LOG : [21/04/2024 23:19:41]: login has been successful admin
+
+
+LOG : [21/04/2024 23:20:26]: login has been successful admin
+
+
+LOG : [21/04/2024 23:22:58]: login has been successful admin
+
+
+LOG : [21/04/2024 23:29:58]: login has been successful admin
+
+
+LOG : [22/04/2024 01:08:39]: login has been successful aisuru
+
+
+LOG : [22/04/2024 01:09:09]: login has been successful admin
+
+
+LOG : [22/04/2024 01:27:58]: Creating forum
+
+LOG : [22/04/2024 01:30:55]: Successful load forum
+
+LOG : [22/04/2024 08:24:49]: login has been successful aisuru
+
+
+LOG : [22/04/2024 08:30:34]: Successful load forum
+
+LOG : [22/04/2024 08:30:37]: Successful load forum
+
+LOG : [22/04/2024 08:30:39]: Successful load forum
+
+LOG : [22/04/2024 08:30:40]: Successful load forum
+
+LOG : [22/04/2024 08:30:42]: Successful load forum
+
+LOG : [22/04/2024 08:30:43]: Successful load forum
+
+LOG : [22/04/2024 08:30:45]: Successful load forum
+
+LOG : [22/04/2024 08:30:50]: Notification inserted successfully.
+
+LOG : [22/04/2024 08:31:07]: login has been successful demo
+
+
+LOG : [22/04/2024 08:31:07]: Successful load forum
+
+LOG : [22/04/2024 08:31:11]: Notification inserted successfully.
+
+LOG : [22/04/2024 08:31:21]: login has been successful admin
+
+
+LOG : [22/04/2024 08:31:22]: Successful load forum
+
+LOG : [22/04/2024 08:35:49]: login has been successful aisuru
+
+
+LOG : [22/04/2024 08:42:15]: login has been successful demo
+
+
+LOG : [22/04/2024 08:42:16]: Successful load forum
+
+LOG : [22/04/2024 08:42:22]: Notification inserted successfully.
+
+LOG : [22/04/2024 08:42:34]: Notification inserted successfully.
+
+LOG : [22/04/2024 08:42:48]: Notification inserted successfully.
+
+LOG : [22/04/2024 08:43:00]: login has been successful admin
+
+
+LOG : [22/04/2024 08:43:07]: Successful load forum
+
+LOG : [22/04/2024 08:43:29]: Successful load forum
+
+LOG : [22/04/2024 08:43:31]: Successful load forum
+
+LOG : [22/04/2024 08:43:42]: Successful load forum
+
+LOG : [22/04/2024 08:44:10]: login has been successful aisuru
+
+
+LOG : [22/04/2024 08:44:12]: Successful load forum
+

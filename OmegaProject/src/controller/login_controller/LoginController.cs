@@ -45,13 +45,13 @@ namespace SearchNow.src.controller.login_controller
                     // Create an instance of the main menu form and show it
                     MenuForm menuApp = new MenuForm(userModel.GetUser(username));
                     menuApp.Show();
-                    Logger.WriteLog($"Login has been successfull :{username}", loginAttempt);
+                    
                 }
                 
             }
             catch (Exception ex)
             {
-                Logger.WriteLog($"{ex.Message}\n{ex.StackTrace}", true);
+                Logger.WriteLog(ex.Message, true);
             }
             return loginAttempt;
         }

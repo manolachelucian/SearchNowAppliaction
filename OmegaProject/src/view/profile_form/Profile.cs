@@ -49,7 +49,7 @@ namespace OmegaProject.src.profile_form
         private void _updateBio_Click(object sender, EventArgs e)
         {
             // Updates the user's biography with the provided text.
-            profileController.updateUserBio(user.Username, _bio.Text);
+            profileController.updateUserBio(user, _bio.Text);
 
         }
 

@@ -1,9 +1,16 @@
-﻿
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
+/// <summary>
+/// Provides methods for computing SHA256 hashes.
+/// </summary>
 public class HashHelper
 {
+    /// <summary>
+    /// Computes the SHA256 hash of the input string.
+    /// </summary>
+    /// <param name="rawData">The input string to hash.</param>
+    /// <returns>The SHA256 hash value as a hexadecimal string.</returns>
     public string ComputeSha256Hash(string rawData)
     {
         // Create a SHA256 hash object

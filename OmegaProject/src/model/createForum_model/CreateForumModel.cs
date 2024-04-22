@@ -1,19 +1,23 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using MySql.Data.MySqlClient;
-using SearchNow.src.objects.user;
-using System;
-using System.Collections.Generic;
+﻿using MySql.Data.MySqlClient;
+using SearchNow.src.objects;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using User = SearchNow.src.objects.user.User;
 
 namespace SearchNow.src.model.createForum_model
 {
+    /// <summary>
+    /// Represents the model for creating a new forum.
+    /// </summary>
     public class CreateForumModel
     {
-        public bool createForum(string forumName,string forumDescription,User currentUser)
+        /// <summary>
+        /// Creates a new forum with the specified name and description.
+        /// </summary>
+        /// <param name="forumName">The name of the forum to create.</param>
+        /// <param name="forumDescription">The description of the forum to create.</param>
+        /// <param name="currentUser">The user who is creating the forum.</param>
+        /// <returns>True if the forum was successfully created; otherwise, false.</returns>
+        public bool createForum(string forumName, string forumDescription, User currentUser)
         {
             bool result = false;
             try
@@ -32,7 +36,8 @@ namespace SearchNow.src.model.createForum_model
 
                         if (rowsAffected > 0)
                         {
-                            result = true;   
+                            result = true;
+                            Logger.WriteLog("Creating forum",false);
                         }
                     }
                 }
@@ -41,14 +46,14 @@ namespace SearchNow.src.model.createForum_model
             catch (MySqlException ex)
             {
                 MessageBox.Show("Error communicating with the database: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message+ex.StackTrace, true);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message + ex.StackTrace, true);
             }
             return result;
         }
-
-
     }
 }

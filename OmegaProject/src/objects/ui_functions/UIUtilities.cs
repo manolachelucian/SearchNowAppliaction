@@ -3,10 +3,12 @@ using OmegaProject.src;
 using OmegaProject.src.profile_form;
 using OmegaProject.src.settings_form;
 using SearchNow.src.adminMenu_form;
+using SearchNow.src.controller.search_profile_form;
 using SearchNow.src.createForum_form;
 using SearchNow.src.model.user_forums_functions;
 using SearchNow.src.objects.user;
 using SearchNow.src.user_forums_form;
+using SearchNow.src.view.notification_form;
 
 namespace SearchNow.src.objects.ui_functions
 {
@@ -68,6 +70,7 @@ namespace SearchNow.src.objects.ui_functions
         /// </summary>
         /// <param name="currentForm">The current form.</param>
         /// <param name="directionButton">The button clicked to navigate to another form.</param>
+        /// <param name="user">The user object associated with the action (optional).</param>
         public void formDirectionFunction(Form currentForm, Button directionButton, User user)
         {
             try
@@ -139,10 +142,10 @@ namespace SearchNow.src.objects.ui_functions
 
                     case "myForumsButton":
                         User_forums userForums = null;
-                        UserForumsFunctions userForumsFunctions = new UserForumsFunctions(user);
+                        
                         if (userForums == null)
                         {
-                            userForums = new User_forums(userForumsFunctions);
+                            userForums = new User_forums(user);
                             userForums.FormClosed += (s, e) =>
                             {
                                 userForums = null;
@@ -183,6 +186,23 @@ namespace SearchNow.src.objects.ui_functions
                             adminMenuForm.FormClosed += (s, e) =>
                             {
                                 adminMenuForm = null;
+                                currentForm.Enabled = true;
+                                currentForm.Focus();
+                            };
+                        }
+                        break;
+
+                    case "notificationButton":
+                        NotificationForum noticationForm = null;
+                        if(noticationForm == null)
+                        {
+                            noticationForm = new NotificationForum(user);
+                            noticationForm.Show();
+                            noticationForm.Activate();
+                            currentForm.Enabled= false;
+                            noticationForm.FormClosed += (s, e) =>
+                            {
+                                noticationForm = null;
                                 currentForm.Enabled = true;
                                 currentForm.Focus();
                             };

@@ -201,9 +201,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(31, 148);
+            pictureBox1.Location = new Point(34, 146);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(23, 27);
+            pictureBox1.Size = new Size(17, 28);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
@@ -211,9 +211,9 @@
             // lock_icon
             // 
             lock_icon.Image = (Image)resources.GetObject("lock_icon.Image");
-            lock_icon.Location = new Point(30, 230);
+            lock_icon.Location = new Point(31, 230);
             lock_icon.Name = "lock_icon";
-            lock_icon.Size = new Size(24, 30);
+            lock_icon.Size = new Size(18, 30);
             lock_icon.SizeMode = PictureBoxSizeMode.Zoom;
             lock_icon.TabIndex = 15;
             lock_icon.TabStop = false;

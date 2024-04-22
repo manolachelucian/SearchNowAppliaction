@@ -3,10 +3,18 @@ using SearchNow.src.objects.user;
 
 namespace SearchNow.src.createForum_form
 {
+    /// <summary>
+    /// Represents the form for creating a new forum.
+    /// </summary>
     public partial class CreateForum : Form
     {
         private User user;
         private CreateForumController createForumController;
+
+        /// <summary>
+        /// Initializes a new instance of the CreateForum class.
+        /// </summary>
+        /// <param name="user">The user creating the forum.</param>
         public CreateForum(User user)
         {
             this.createForumController = new CreateForumController();
@@ -14,6 +22,12 @@ namespace SearchNow.src.createForum_form
             InitializeComponent();
             buttonCreateForum.Click += btnCreateForum_Click;
         }
+
+        /// <summary>
+        /// Event handler for creating a new forum.
+        /// </summary>
+        /// <param name="sender">The sender object.</param>
+        /// <param name="e">The event arguments.</param>
         private void btnCreateForum_Click(object sender, EventArgs e)
         {
             string forumName = textBoxForumName.Text;
@@ -27,9 +41,5 @@ namespace SearchNow.src.createForum_form
                 MessageBox.Show("Forum name cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        
-
-        
     }
 }

@@ -1,11 +1,15 @@
 ﻿using MySql.Data.MySqlClient;
+using SearchNow.src.objects;
+using System.Windows.Forms;
 
-namespace SearchNow.src.model.menu_functions
+namespace SearchNow.src.model.menu_model
 {
-    public class MenuFunctions
+    /// <summary>
+    /// Provides functionality related to menu operations.
+    /// </summary>
+    public class MenuModel
     {
-
-        // <summary>
+        /// <summary>
         /// Loads forums data into the specified ListBox control based on the selected filter and search term.
         /// </summary>
         /// <param name="listBoxForums">The ListBox control to populate with forum names.</param>
@@ -13,13 +17,12 @@ namespace SearchNow.src.model.menu_functions
         /// <param name="searchTerm">The TextBox control containing the search term for filtering forum names.</param>
         public void LoadForums(ListBox listBoxForums, ComboBox filterBox, TextBox searchTerm)
         {
-            
             try
             {
                 listBoxForums.Items.Clear(); // Clear the ListBox items
 
                 string orderByClause = "DESC"; // Default order by clause
-                                               
+
                 if (filterBox.SelectedItem != null)
                 {
                     string sortOrder = filterBox.SelectedItem.ToString();
@@ -30,13 +33,12 @@ namespace SearchNow.src.model.menu_functions
                 string searchFilter = string.IsNullOrEmpty(searchTerm.Text) ? "" : " WHERE forum_name LIKE @searchTerm";
                 string query = $"SELECT forum_name FROM forums{searchFilter} ORDER BY created_at {orderByClause}";
 
-                using(MySqlConnection connection = new MySqlConnection(DatabaseConnection.GetConnection()))
+                using (MySqlConnection connection = new MySqlConnection(DatabaseConnection.GetConnection()))
                 {
                     connection.Open();
                     // Create MySqlCommand
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
- 
                         // Add parameter for the search term
                         if (!string.IsNullOrEmpty(searchTerm.Text))
                             command.Parameters.AddWithValue("@searchTerm", $"%{searchTerm.Text}%");
@@ -49,23 +51,19 @@ namespace SearchNow.src.model.menu_functions
                                 listBoxForums.Items.Add(forumName);
                             }
                         }
-
                     }
-
                 }
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message, "MySQL Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message + ex.StackTrace, true);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error Load fun", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logger.WriteLog(ex.Message + ex.StackTrace, true);
             }
-            
         }
-
-        
-
     }
 }
