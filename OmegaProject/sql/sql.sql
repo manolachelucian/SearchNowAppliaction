@@ -16,6 +16,10 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Dumping events for database 'app_database'
+--
+
+--
 -- Dumping routines for database 'app_database'
 --
 /*!50003 DROP PROCEDURE IF EXISTS `check_username` */;
@@ -368,4 +372,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-22  9:25:16
+-- Dump completed on 2024-04-22  9:42:37
